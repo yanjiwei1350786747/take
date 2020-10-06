@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn">折叠/展开</button>
+	<input type="text" value="折叠" id="ipt">
+	<script>
+		var btn=document.getElementById('btn');
+		var ipt=document.getElementById('ipt');
+		btn.onclick=function(){
+			if (ipt.value=='折叠') {
+			ipt.value='展开';
+		}else{
+			ipt.value='折叠';
+		}
+		}
+	</script>
+</body>
+</html>

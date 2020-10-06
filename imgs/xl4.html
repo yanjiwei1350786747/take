@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" value="关键词" id="ipt">
+	<script>
+		var i=document.getElementById('ipt');
+		var v=i.value;
+		i.onfocus=function(){
+			if (this.value=='v') {
+			this.value='';
+		}
+	}
+		i.onblur=function(){
+			if (this.value==''){
+			this.value=v;
+		}
+	}
+	</script>
+</body>
+</html>
